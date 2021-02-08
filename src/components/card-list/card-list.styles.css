@@ -1,0 +1,27 @@
+.card-list {
+  width: 85vm;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .card-list {
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(255, 196, 0);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .card-list {
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(74, 74, 75);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .card-list {
+    grid-template-columns: 1fr;
+    background-color: blue;
+  }
+}
